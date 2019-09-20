@@ -899,6 +899,7 @@ static bool select_audio_channel_mode(
       }
       break;
     case BTAV_A2DP_CODEC_CHANNEL_MODE_NONE:
+    case BTAV_A2DP_CODEC_CHANNEL_MODE_DUAL_CHANNEL:
       break;
   }
 
@@ -1164,6 +1165,7 @@ bool A2dpCodecConfigAac::setCodecConfig(const uint8_t* p_peer_codec_info,
       }
       break;
     case BTAV_A2DP_CODEC_CHANNEL_MODE_NONE:
+    case BTAV_A2DP_CODEC_CHANNEL_MODE_DUAL_CHANNEL:
       codec_capability_.channel_mode = BTAV_A2DP_CODEC_CHANNEL_MODE_NONE;
       codec_config_.channel_mode = BTAV_A2DP_CODEC_CHANNEL_MODE_NONE;
       break;
